@@ -64,7 +64,7 @@ ul{
     max-width: 1440px;
     height: 100vh;
     position: relative;
-    background: url('/images/desktop/image-header.jpg') no-repeat center center/cover;
+    background: url('./images/desktop/image-header.jpg') no-repeat center center/cover;
     color: white;
 }
 
@@ -72,13 +72,13 @@ ul{
     display:block;
     position: relative;
     height: 90vh;
-    background: url('/images/desktop/image-graphic-design.jpg') no-repeat center center/cover;
+    background: url('./images/desktop/image-graphic-design.jpg') no-repeat center center/cover;
 }
 
 .right{
     position: relative;
     height: 90vh;
-    background: url('/images/desktop/image-photography.jpg') no-repeat center center/cover;
+    background: url('./images/desktop/image-photography.jpg') no-repeat center center/cover;
 }
 
 .img-gallery{
