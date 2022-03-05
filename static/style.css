@@ -9,7 +9,7 @@
 body{
     font-size: 18px;
     font-family: 'Barlow', sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 a, li a{
@@ -27,11 +27,12 @@ a, li a{
 }
 
 .menu{
-    padding: 15px ;
+    padding: 15px;
+    justify-content: space-evenly;
 }
 
 .opt{
-    padding: 10px;
+    padding: 15px;
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
     color: aliceblue;
@@ -40,6 +41,8 @@ a, li a{
 .active:hover{
     font-family: 'Fraunces', sans-serif;
     font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
     color: black;
     background-color: aliceblue;
     border-radius: 50px;
@@ -64,21 +67,113 @@ ul{
     max-width: 1440px;
     height: 100vh;
     position: relative;
-    background: url('images/desktop/image-header.jpg') no-repeat center center/cover;
+    background: url('/images/desktop/image-header.jpg') no-repeat center center/cover;
     color: white;
+}
+
+.text-content{
+    color: darkgray;
+}
+
+/* Para el sub-rayado de Learn More:
+mi-div::befoer{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: 4px;
+    background-color: mi-color;
+}
+
+*/
+
+.sub-title{
+    font-size: 2rem;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700 bold;
+    color: rgb(66, 62, 62);
+
+}
+
+.yellow{
+    border-bottom: hsl(51, 100%, 49%, .5) 5px solid ;
+    max-width:max-content;
+}
+
+.soft-red{
+    border-bottom: hsl(7, 99%, 70%, .5) 5px solid;
+    max-width: max-content;
+}
+
+.to-learn{
+    font-size: 0.8rem;
+    font-family: 'Fraunces', sans-serif;
+    font-weight:bolder;
+    color: rgb(66, 62, 62);
+    text-transform: uppercase;
 }
 
 .left{
     display:block;
     position: relative;
+    width: 100%;
     height: 90vh;
-    background: url('./images/desktop/image-graphic-design.jpg') no-repeat center center/cover;
 }
 
-.right{
-    position: relative;
-    height: 90vh;
-    background: url('./images/desktop/image-photography.jpg') no-repeat center center/cover;
+.graphic-photo{
+    position: absolute;
+    z-index: 1;
+}
+
+.p-g-title{
+    font-size: 2rem;
+    font-family: 'Fraunces', sans-serif;
+}
+
+.p-g-text{
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    padding-top: 1.5em;
+    padding-bottom: 3em;
+    line-height: 1.5rem;
+}
+
+.graph-color{
+    color:hsl(167, 40%, 24%);
+}
+
+.photo-color{
+    color:hsl(198, 62%, 26%);
+}
+
+.client{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    text-transform:uppercase;
+    letter-spacing: 0.5rem;
+    color: hsl(232, 10%, 55%);
+}
+
+.img-client{
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+}
+
+.name{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size:large;
+    color:black;
+}
+
+.pro{
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    color: hsl(232, 10%, 55%);
+    opacity: .5;
 }
 
 .img-gallery{
@@ -88,8 +183,6 @@ ul{
 
 .pie{
     background-color: aquamarine;
-}
-
-.test{
-    border:1px solid green;
+    color: hsl(168, 34%, 41%);
+    text-decoration: none;
 }
