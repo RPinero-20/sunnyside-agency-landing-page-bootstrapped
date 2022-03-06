@@ -9,7 +9,7 @@
 body{
     font-size: 18px;
     font-family: 'Barlow', sans-serif;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 a, li a{
@@ -67,8 +67,17 @@ ul{
     max-width: 1440px;
     height: 100vh;
     position: relative;
-    background: url('/images/desktop/image-header.jpg') no-repeat center center/cover;
     color: white;
+}
+
+.show-ground{
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
 }
 
 .text-content{
@@ -182,7 +191,20 @@ mi-div::befoer{
 }
 
 .pie{
-    background-color: aquamarine;
+    background-color: rgb(123, 241, 202);
     color: hsl(168, 34%, 41%);
     text-decoration: none;
+}
+
+.pie-menu{
+    color: hsl(168, 34%, 41%);
+}
+
+.pie-menu:hover{
+    color: white;
+}
+
+.name-brand{
+    font-weight: 1000;
+    padding-top: 2.5rem;
 }
