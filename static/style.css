@@ -31,6 +31,17 @@ a, li a{
     justify-content: space-evenly;
 }
 
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    color: aliceblue;
+    top: 42px;
+    right: 65px;
+    z-index: 2;
+    font-size: 2rem;
+    display: none;
+}
+
 .opt{
     padding: 15px;
     font-family: 'Barlow', sans-serif;
@@ -71,7 +82,7 @@ ul{
 }
 
 .show-ground{
-    width: 100%;
+    width:100%;
     max-width: 1440px;
     height: 100vh;
     position: absolute;
@@ -85,7 +96,7 @@ ul{
 }
 
 /* Para el sub-rayado de Learn More:
-mi-div::befoer{
+mi-div::before{
     content: "";
     display: block;
     position: absolute;
@@ -104,6 +115,10 @@ mi-div::befoer{
     font-weight: 700 bold;
     color: rgb(66, 62, 62);
 
+}
+
+.first{
+    display: flex;
 }
 
 .yellow{
@@ -207,4 +222,77 @@ mi-div::befoer{
 .name-brand{
     font-weight: 1000;
     padding-top: 2.5rem;
+}
+
+@media (min-width: 400px) and (max-width: 500px){
+
+    .menu-btn{
+        display: block;
+    }
+
+    .box-menu{
+        display: none !important;
+    }
+
+    #we-are{
+        text-align: center;
+    }
+
+    .show-ground{
+        display: none;
+    }
+
+    #showcase{
+        background: url('/images/mobile/image-header.jpg') no-repeat center center/cover;
+    }
+
+    .first{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #order{
+        order: -1 !important;
+    }
+
+    #tyb{
+        width: 80%;
+        justify-self: center;
+        text-align: center;
+        order: 2 !important;
+        padding: 2.5em;
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+
+    .o-fit{
+        object-fit: cover;
+    }
+
+    .client{
+        letter-spacing: 0.3rem;
+    }
+
+    #c-test{
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    #galimg{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .pro{
+        padding-bottom: 2.5em;
+    }
+
+    .name-brand{
+        font-size: 3rem;
+    }
+
+    .opt{
+        padding: 7px;
+    }
+
 }

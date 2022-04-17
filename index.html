@@ -6,7 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel = "stylesheet" href = "./static/style.css" type = "text/css">
-  <link rel = "stylesheet" href = "static/bootstrap.min.css" type = "text/css">
+  <link rel = "stylesheet" href = "static/bootstrap.css" type = "text/css">
+  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
@@ -17,6 +18,10 @@
 
 <body>
 
+  <div class = "menu-btn">
+    <i class = "fas fa-bars"></i>
+  </div>
+
   <main class = "container-fluid img-fluid pt-4 my-0" id = "showcase">
     <img src = "./images/desktop/image-header.jpg" alt = "background" class = "show-ground">
     <section class = "row">
@@ -25,7 +30,7 @@
           <h1 class = "name-brand ps-4">sunnyside</h1>
         </div>
       </div>
-      <div class = "col-md-6">
+      <div class = "col-md-6 box-menu">
         <ul class = "menu" >
           <li><a class = "opt active" href = "#">About</a></li>
           <li><a class = "opt active" href = "#">Services</a></li>
@@ -35,7 +40,7 @@
       </div>
       <div class = "row-md-10 pt-5">
         <ul>
-          <li><h1 class = "title pt-4">WE ARE CREATIVES</h1></li>
+          <li id = "we-are"><h1 class = "title pt-4">WE ARE CREATIVES</h1></li>
         </ul>
         <ul>
           <li><img class = "arrow pt-5" src = "./images/icon-arrow-down.svg"></li>
@@ -47,35 +52,39 @@
   <hero class = "container-fluid p-0 my-0">
 
     <section class = "col-md-12 d-flex">
-      <div class = "row justify-content-center align-content-center ">
-        <div class = "content col-md-6">
-          <h2 class = "sub-title">Transform your brand</h2>
+      <div class = "first">
+        <div class = "row justify-content-center align-content-center" id = "tyb">
+          <div class = "content col-sd-12 col-md-6">
+            <h2 class = "sub-title">Transform your brand</h2>
 
-          <p class = "py-4 text-content">We are a full-service creative agency specializing in helping brands grow fast.
-          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+            <p class = "py-4 text-content">We are a full-service creative agency specializing in helping brands grow fast.
+            Engage your clients through compelling visuals that do most of the marketing for you.</p>
 
-          <h3 class = "to-learn yellow px-1">Learn more</h3>
+            <h3 class = "to-learn yellow px-1">Learn more</h3>
+          </div>
         </div>
-      </div>
 
-      <div class = "col-md-6">
-        <img src = "./images/desktop/image-transform.jpg" alt = "img" class = "img-fluid">
+        <div class = "col-md-6" id = "order">
+          <img src = "./images/desktop/image-transform.jpg" alt = "img" class = "img-fluid">
+        </div>
       </div>
     </section>
 
     <section class = "col-md-12 d-flex">
-      <div class = "col-md-6">
-        <img src = "./images/desktop/image-stand-out.jpg" alt = "img" class = "img-fluid">
-      </div>
+      <div class="first">
+        <div class = "col-md-6" id = "order">
+          <img src = "./images/desktop/image-stand-out.jpg" alt = "img" class = "img-fluid">
+        </div>
 
-      <div class = "row justify-content-center align-content-center">
-        <div class="content col-md-6">
-          <h2 class = "sub-title">Stand out to the right audience</h2>
+        <div class = "row justify-content-center align-content-center" id="tyb">
+          <div class="content col-md-6">
+            <h2 class = "sub-title">Stand out to the right audience</h2>
 
-          <p class = "py-4 text-content">Using a collaborative formula of designers, researchers, photographers, videographers, 
-            and copywriters, we’ll build and extend your brand in digital places.</p>
+            <p class = "py-4 text-content">Using a collaborative formula of designers, researchers, photographers, videographers,
+              and copywriters, we’ll build and extend your brand in digital places.</p>
 
-          <h3 class = "to-learn soft-red px-1">Learn more</h3>
+            <h3 class = "to-learn soft-red px-1">Learn more</h3>
+          </div>
         </div>
       </div>
 
@@ -84,65 +93,71 @@
   </hero>
 
   <section class = "col-md-12 d-flex my-0">
-    <div class = "col-md-6 left text-center d-flex justify-content-center">
-      <div class = "graphic-photo graph-color align-self-end">
-        <h2 class = "p-g-title">Graphic design</h2>
-        <h3 class = "p-g-text">Great design makes you memorable. We deliver <br> artwork that underscores your brand message <br> and captures potential clients’ attention.</h3>
+    <div class = "first">
+      <div class = "col-md-6 left text-center d-flex justify-content-center">
+        <div class = "graphic-photo graph-color align-self-end">
+          <h2 class = "p-g-title">Graphic design</h2>
+          <h3 class = "p-g-text">Great design makes you memorable. We deliver <br> artwork that underscores your brand message <br> and captures potential clients’ attention.</h3>
+        </div>
+        <img src = "./images/desktop/image-graphic-design.jpg" alt = "img" class = "left o-fit">
       </div>
-      <img src = "./images/desktop/image-graphic-design.jpg" alt = "img" class = "left">
-    </div>
-    <div class = "col-md-6 left text-center d-flex justify-content-center">
-      <div class="graphic-photo photo-color align-self-end">
-        <h2 class = "p-g-title">Photography</h2>
-        <h3 class = "p-g-text">Increase your credibility by getting the most <br> stunning, high-quality photos that improve your <br> business image.</h3>
+      <div class = "col-md-6 left text-center d-flex justify-content-center">
+        <div class="graphic-photo photo-color align-self-end">
+          <h2 class = "p-g-title">Photography</h2>
+          <h3 class = "p-g-text">Increase your credibility by getting the most <br> stunning, high-quality photos that improve your <br> business image.</h3>
+        </div>
+        <img src = "./images/desktop/image-photography.jpg" alt = "img" class = "left o-fit">
       </div>
-      <img src = "./images/desktop/image-photography.jpg" alt = "img" class = "left">
     </div>
-
   </section>
 
   <section class = "col-md-12 py-5">
-    <div class = "col-md-12 d-flex justify-content-center py-5">
-      <h4 class = "client py-5">Client testimonials</h4>
-    </div>
-    <div class = "col-md-12 d-flex my-0">
 
-      <div class = "col-md-4 text-center">
-        <div class = "testimonial-photo d-flex py-4 justify-content-center"><img src = "./images/image-emily.jpg" alt = "photo" class = "img-client"></div>
-        <p class="p-g-text">We put our trust in Sunnyside and they <br> delivered, making sure our needs were met <br> and deadlines were always hit.</p>
-        <p class = "name">Emily R.</p>
-        <p class = "pro">Marketing Director</p>
+      <div class = "col-md-12 d-flex justify-content-center py-5">
+        <h4 class = "client py-5">Client testimonials</h4>
       </div>
 
-      <div class = "col-md-4 text-center">
-        <div class="testimonial-photo d-flex py-4 justify-content-center"><img src="./images/image-thomas.jpg" alt = "photo" class = "img-client"></div>
-        <p class="p-g-text">Sunnyside’s enthusiasm coupled with their <br> keen interest in our brand’s success made it <br> a satisfying and enjoyable experience.</p>
-        <p class = "name">Thomas S.</p>
-        <p class = "pro">Chief Operating Officer</p>
+      <div class = "col-md-12 d-flex my-0" id = "c-test">
+
+        <div class = "col-md-4 text-center">
+          <div class = "testimonial-photo d-flex py-4 justify-content-center"><img src = "./images/image-emily.jpg" alt = "photo" class = "img-client"></div>
+          <p class="p-g-text">We put our trust in Sunnyside and they <br> delivered, making sure our needs were met <br> and deadlines were always hit.</p>
+          <p class = "name">Emily R.</p>
+          <p class = "pro">Marketing Director</p>
+        </div>
+
+        <div class = "col-md-4 text-center">
+          <div class="testimonial-photo d-flex py-4 justify-content-center"><img src="./images/image-thomas.jpg" alt = "photo" class = "img-client"></div>
+          <p class="p-g-text">Sunnyside’s enthusiasm coupled with their <br> keen interest in our brand’s success made it <br> a satisfying and enjoyable experience.</p>
+          <p class = "name">Thomas S.</p>
+          <p class = "pro">Chief Operating Officer</p>
+        </div>
+
+        <div class = "col-md-4 text-center">
+          <div class="testimonial-photo d-flex py-4 justify-content-center"><img src="./images/image-jennie.jpg" alt = "photo" class = "img-client"></div>
+          <p class="p-g-text">Incredible end result! Our sales increased <br> over 400% when we worked with Sunnyside. <br> Highly recommended!</p>
+          <p class = "name">Jennie F.</p>
+          <p class = "pro">Business Owner</p>
+        </div>
+
       </div>
 
-      <div class = "col-md-4 text-center">
-        <div class="testimonial-photo d-flex py-4 justify-content-center"><img src="./images/image-jennie.jpg" alt = "photo" class = "img-client"></div>
-        <p class="p-g-text">Incredible end result! Our sales increased <br> over 400% when we worked with Sunnyside. <br> Highly recommended!</p>
-        <p class = "name">Jennie F.</p>
-        <p class = "pro">Business Owner</p>
-      </div>
-
-    </div>
   </section>
 
   <section class = "col-md-12 d-flex my-0">
-    <div class = "col-md-3">
-      <img src = "./images/desktop/image-gallery-milkbottles.jpg" alt = "image" class = "img-gallery">
-    </div>
-    <div class = "col-md-3">
-      <img src = "./images/desktop/image-gallery-orange.jpg" alt = "image" class = "img-gallery">
-    </div>
-    <div class = "col-md-3">
-      <img src = "./images/desktop/image-gallery-cone.jpg" alt = "image" class = "img-gallery">
-    </div>
-    <div class="col-md-3">
-      <img src = "./images/desktop/image-gallery-sugarcubes.jpg" alt = "image" class = "img-gallery">
+    <div class = "gallery d-flex" id = "galimg">
+      <div class = "col-md-3">
+        <img src = "./images/desktop/image-gallery-milkbottles.jpg" alt = "image" class = "img-gallery">
+      </div>
+      <div class = "col-md-3">
+        <img src = "./images/desktop/image-gallery-orange.jpg" alt = "image" class = "img-gallery">
+      </div>
+      <div class = "col-md-3">
+        <img src = "./images/desktop/image-gallery-cone.jpg" alt = "image" class = "img-gallery">
+      </div>
+      <div class="col-md-3">
+        <img src = "./images/desktop/image-gallery-sugarcubes.jpg" alt = "image" class = "img-gallery">
+      </div>
     </div>
   </section>
 
