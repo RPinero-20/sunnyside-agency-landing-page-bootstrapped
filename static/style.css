@@ -224,7 +224,7 @@ mi-div::before{
     padding-top: 2.5rem;
 }
 
-@media (min-width: 400px) and (max-width: 500px){
+@media (min-width: 375px) and (max-width: 900px){
 
     .menu-btn{
         display: block;
