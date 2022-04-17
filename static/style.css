@@ -243,7 +243,7 @@ mi-div::before{
     }
 
     #showcase{
-        background: url('./images/mobile/image-header.jpg') no-repeat center center/cover;
+        background: url('https://github.com/RPinero-20/sunnyside-agency-landing-page-bootstrapped/blob/main/images/mobile/image-header.jpg') no-repeat center center/cover;
     }
 
     .first{
