@@ -26,9 +26,15 @@ a, li a{
     font-weight: 600;
 }
 
+.box-menu{
+    width: 100%;
+}
+
 .menu{
-    padding: 15px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     justify-content: space-evenly;
+    padding: 10px;
 }
 
 .menu-btn{
@@ -42,22 +48,7 @@ a, li a{
     display: none;
 }
 
-.opt{
-    padding: 15px;
-    font-family: 'Barlow', sans-serif;
-    font-weight: 600;
-    color: aliceblue;
-}
 
-.active:hover{
-    font-family: 'Fraunces', sans-serif;
-    font-weight: 600;
-    font-size: 11px;
-    text-transform: uppercase;
-    color: black;
-    background-color: aliceblue;
-    border-radius: 50px;
-}
 
 .attribution {
     font-size: 11px; text-align: center;
@@ -83,12 +74,35 @@ ul{
 
 .show-ground{
     width:100%;
-    max-width: 1440px;
     height: 100vh;
     position: absolute;
     z-index: -1;
     left: 0;
     top: 0;
+}
+
+.active{
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    color:black;
+    background-color: aliceblue;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 600;
+}
+
+.opt{
+    color: aliceblue;
+}
+
+.selected:hover{
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    text-transform:uppercase;
+    background-color: rgb(134, 199, 255);
+    font-family: 'Fraunces', sans-serif;
+    font-weight: bold;
+    color:aliceblue;
+    font-size: 0.8rem;
 }
 
 .text-content{
@@ -117,18 +131,22 @@ mi-div::before{
 
 }
 
-.first{
-    display: flex;
+.yellow{
+    border-bottom: hsl(51, 100%, 49%, .5) 5px solid;
+    max-width:max-content;
 }
 
-.yellow{
-    border-bottom: hsl(51, 100%, 49%, .5) 5px solid ;
-    max-width:max-content;
+.yellow:hover{
+    border-bottom: rgba(255, 217, 0, 0.856) 5px solid;
 }
 
 .soft-red{
     border-bottom: hsl(7, 99%, 70%, .5) 5px solid;
     max-width: max-content;
+}
+
+.soft-red:hover{
+    border-bottom: rgba(255, 30, 0, 0.5) 5px solid;
 }
 
 .to-learn{
@@ -137,6 +155,12 @@ mi-div::before{
     font-weight:bolder;
     color: rgb(66, 62, 62);
     text-transform: uppercase;
+}
+
+.first{
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
 }
 
 .left{
@@ -206,9 +230,11 @@ mi-div::before{
 }
 
 .pie{
+    width: 100%;
     background-color: rgb(123, 241, 202);
     color: hsl(168, 34%, 41%);
     text-decoration: none;
+    max-width: 1440px;
 }
 
 .pie-menu{
@@ -221,17 +247,54 @@ mi-div::before{
 
 .name-brand{
     font-weight: 1000;
-    padding-top: 2.5rem;
 }
 
-@media (min-width: 375px) and (max-width: 900px){
+@media (min-width: 350px) and (max-width: 750px){
 
     .menu-btn{
         display: block;
     }
 
+    .nav-bar{
+        position: absolute;
+        width: 100%;
+        height: 300px !important;
+        margin-top: 100px !important;
+        justify-content: center;
+        align-items: center;
+    }
+
     .box-menu{
-        display: none !important;
+        width: calc(100% - 70px) !important;
+        height: 300px;
+        justify-self: center;
+    }
+
+    .menu{
+        display:none;
+        width: 100%;
+        height:100%;
+        text-align: center;
+        padding: 3rem;
+        background-color: aliceblue;
+    }
+
+    .show{
+        display: block !important;
+    }
+
+    .pad{
+        padding-top: 3vh;
+        font-size: large;
+        font-weight: 600;
+    }
+
+    .active{
+        background-color: rgb(250, 212, 0);
+    }
+
+    .selected{
+        color: hsl(228, 45%, 44%);
     }
 
     #we-are{
@@ -244,11 +307,12 @@ mi-div::before{
 
     #showcase{
         background: url('https://github.com/RPinero-20/sunnyside-agency-landing-page-bootstrapped/blob/main/images/mobile/image-header.jpg?raw=true') no-repeat center center/cover;
+        /* background: url('/images/mobile/image-header.jpg') no-repeat center center/cover; */
     }
 
     .first{
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
 
     #order{
@@ -256,7 +320,7 @@ mi-div::before{
     }
 
     #tyb{
-        width: 80%;
+        width: 100%;
         justify-self: center;
         text-align: center;
         order: 2 !important;
@@ -279,6 +343,7 @@ mi-div::before{
     }
 
     #galimg{
+        width: 100%;
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;
     }
