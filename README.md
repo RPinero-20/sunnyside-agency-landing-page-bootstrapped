@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/screenshot.jpg alt = "img")
+(./images/screenshot.jpg)
 
 ### Links
 
