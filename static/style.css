@@ -109,20 +109,6 @@ ul{
     color: darkgray;
 }
 
-/* Para el sub-rayado de Learn More:
-mi-div::before{
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    left: 0;
-    bottom: 4px;
-    background-color: mi-color;
-}
-
-*/
-
 .sub-title{
     font-size: 2rem;
     font-family: 'Fraunces', sans-serif;
@@ -249,7 +235,8 @@ mi-div::before{
     font-weight: 1000;
 }
 
-@media (min-width: 350px) and (max-width: 750px){
+
+@media (min-width: 350px) and (max-width: 748px){
 
     .menu-btn{
         display: block;
@@ -274,9 +261,24 @@ mi-div::before{
         display:none;
         width: 100%;
         height:100%;
+        right: 0;
         text-align: center;
         padding: 3rem;
         background-color: aliceblue;
+    }
+
+    .show::before{
+        content:'';
+        display: block;
+        width: 55px;
+        height: 65px;
+        position: absolute;
+        margin-top: -68px;
+        right: 47px; /*  7.5%; */
+        border-top: 20px solid transparent;
+        border-right: 20px solid aliceblue;
+        border-left: 20px solid transparent;
+        border-bottom: 20px solid transparent;
     }
 
     .show{
@@ -307,7 +309,6 @@ mi-div::before{
 
     #showcase{
         background: url('https://github.com/RPinero-20/sunnyside-agency-landing-page-bootstrapped/blob/main/images/mobile/image-header.jpg?raw=true') no-repeat center center/cover;
-        /* background: url('/images/mobile/image-header.jpg') no-repeat center center/cover; */
     }
 
     .first{
@@ -359,5 +360,14 @@ mi-div::before{
     .opt{
         padding: 7px;
     }
+
+    .pie{
+        padding-top: 3rem !important;
+    }
+
+    .pie-menu{
+        font-weight: 700;
+    }
+
 
 }
