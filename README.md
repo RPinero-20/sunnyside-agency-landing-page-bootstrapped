@@ -1,10 +1,10 @@
-# Frontend Mentor - Single price grid component solution
+# Frontend Mentor - Sunnyside agency landing page solution
 
-This is a solution to the [Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
-- [Frontend Mentor - Single price grid component solution](#frontend-mentor---single-price-grid-component-solution)
+- [Frontend Mentor - Sunnyside agency landing page solution](#frontend-mentor---sunnyside-agency-landing-page-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
@@ -12,7 +12,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
   - [Author](#author)
   - [Acknowledgments](#acknowledgments)
@@ -23,49 +23,34 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 Users should be able to:
 
-- View the optimal layout for the component depending on their device's screen size
-- See a hover state on desktop for the Sign Up call-to-action
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
 ### Screenshot
 
-![](./images/My_solution.webp)
+![](./images/screenshot.jpg alt = "img")
 
 ### Links
 
-- Solution URL: [https://github.com/RPinero-20/single-price-grid-component-master](https://your-solution-url.com)
-- Live Site URL: [https://rpinero-20.github.io/single-price-grid-component-master](https://your-live-site-url.com)
+- Solution URL: [Repository](https://github.com/RPinero-20/sunnyside-agency-landing-page-bootstrapped)
+- Live Site URL: [Live](https://rpinero-20.github.io/sunnyside-agency-landing-page-bootstrapped/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
+- HTML
+- CSS
+- [Bootstrap 4.16](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+- JS
 
-For styles
+### Continued development
 
-### What I learned
-
-I focused on using and organizing flex and grid templates to get a business card organized and visible on different devices.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>I´m proud to learning this:</h1>
-```
-```css
-.item-1{
-		grid-area: 1/ 1/ 2/ 3;
-	}
-```
-```
+I try to improve skills using Bootstrap.
 
 ### Useful resources
 
-- [W3School](https://w3schools.com/) - Nothing more to tell you about this page, there are all about HTML and CSS.
+- [W3School](https://www.w3schools.com/default.asp)
 
 ## Author
 
